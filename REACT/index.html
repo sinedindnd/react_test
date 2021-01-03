@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primera web con React</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+    *
+    {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+
+    body
+    {
+      height: 100vh;
+      width: 100vw;
+    }
+
+    h2, #like_button_container
+    {
+      text-align: center;
+      font-family: 'Amatic SC', cursive;
+      font-size: 4rem;
+      text-shadow: 3px 5px 2px rgba(211,10,100,.2);
+    }
+    button
+    {
+      cursor: pointer;
+      padding: 1rem;
+      border: 2px solid red;
+      border-radius: 15px;
+      font-size: 3rem;
+      font-family: 'Amatic SC', cursive;
+      background-image: linear-gradient(to right, rgb(0, 115, 255), rgb(0, 255, 60) 100%);
+    }
+  </style>
+</head>
+<body>
+  <h2>test con react</h2>
+  <hr>
+  <div id="like_button_container"></div>
+
+  <!-- Cargar React. -->
+  <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Cargamos nuestro componente de React. -->
+  <script src="like_button.js"></script>
+
+</body>
+</html>
